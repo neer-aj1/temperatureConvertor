@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>HELLO</h1>
+    <div class="container">
+        <div class="innerContainer">
+            <form class="inputSec" id="inputSec">
+                <div class="inputSec_conv-from">
+                    <label for="from" class="from">From</label>
+                    <div class="inputSec_conv-from_inner">
+                        <input type="number" placeholder="Enter temperature" id="from" class="inputSec_conv-from_input">
+                        <select name="fromTemp" id="fromTemp" class="inputSec_sel-btn">
+                            <option value="calsius">&deg;C</option>
+                            <option value="fahrenheit">&deg;F</option>
+                            <option value="kelvin">K</option>
+                        </select>
+                    </div>
+                    <label for="to" class="from">TO</label>
+                    <select name="toTemp" id="toTemp" class="inputSec_sel-btn_to">
+                        <option value="calsius">&deg;C</option>
+                        <option value="fahrenheit">&deg;F</option>
+                        <option value="kelvin">K</option>
+                    </select>
+                    <button type="submit" class="submitBtn">CONVERT</button>
+                </div>
+            </form>
+            <div class="outputSec">
+                <p class="outputDisp">Result</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+    </script>
 </body>
+
 </html>

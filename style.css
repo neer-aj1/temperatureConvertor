@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    width: auto;
+    border: 2px solid #274C77;
+    border-radius: 10px;
+}
+
+.inputSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+    color: #274C77;
+}
+
+
+.inputSec_conv-from {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.from {
+    font-size: 1.5rem;
+}
+
+.inputSec_conv-from_input,
+.inputSec_sel-btn {
+    border: none;
+    height: 50px;
+}
+
+.inputSec_conv-from_input {
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #274C77;
+}
+
+.inputSec_conv-from_inner {
+    display: flex;
+}
+
+.inputSec_sel-btn {
+    border: 1px solid #274C77;
+    border-radius: 0 20px 20px 0;
+}
+
+.inputSec_sel-btn_to {
+    border: 1px solid #274C77;
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+.submitBtn {
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid #274C77;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.submitBtn:hover {
+    background-color: #274C77;
+    color: white;
+}
+
+.outputSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #274C77;
+    color: white;
+    min-height: 200px;
+}
+
+.outputDisp {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .from{
+        font-size: 1.2rem;
+    }
+    .outputDisp{
+        font-size: 2rem;
+    }
+    .innerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .innerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
